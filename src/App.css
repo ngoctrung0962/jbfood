@@ -1,0 +1,436 @@
+/* css mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  padding: 0 160px;
+}
+.header {
+  background: #414141;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 160px;
+  width: 100%;
+  z-index: 1;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 32px;
+}
+.header__menu__item {
+  margin: 5 20px;
+}
+.header__menu__item a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 16px;
+}
+.header__menu__item a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.btn__menu {
+  width: 32px;
+  height: 32px;
+}
+.toppage__report__left {
+  position: relative;
+}
+
+.hex__box {
+  position: relative;
+  width: 136px;
+  height: 136px;
+  margin: 0 42px;
+  background: linear-gradient(155.89deg, #ffcc21 8.26%, #ff963c 91.18%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.category__text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.toppage__product__item {
+  position: relative;
+  margin: 4px;
+}
+.product__img {
+  width: 234px;
+  height: 234px;
+  object-fit: cover;
+}
+.product__des {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffcc21;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding: 7px 8px;
+}
+.btn__loadmore {
+  background: linear-gradient(32.95deg, #ffcc21 8.75%, #ff963c 86.64%);
+  border-radius: 3px;
+  border: none;
+  padding: 14px 32px;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.btn__loadmore span {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  text-align: center;
+
+  color: #ffffff;
+  padding: 16px;
+}
+
+.footer {
+  background: #414141;
+  padding: 32px 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link__item {
+}
+.footer__link__item a {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 16px;
+  /* identical to box height, or 145% */
+
+  letter-spacing: 0.033px;
+
+  color: #ffffff;
+  margin-right: 45px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+.box__nav__item {
+  margin: 24px;
+  border: 24px solid #ffcc21;
+}
+.box__nav__item__inner {
+  background: #2e2e2e;
+}
+.box__nav__item__name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height, or 120% */
+  text-align: center;
+  letter-spacing: 0.125px;
+  text-transform: uppercase;
+  color: #ffcc21;
+  margin-bottom: 10px;
+}
+.box__nav__item__des {
+  background: #ff963c;
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: center;
+
+  color: #ffffff;
+  padding: 3px 20px;
+}
+.chart__head__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  /* or 120% */
+
+  letter-spacing: 0.15px;
+
+  color: #ffffff;
+  text-transform: uppercase;
+  max-width: 96px;
+}
+.chart__head__des {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  /* identical to box height, or 123% */
+
+  letter-spacing: 0.11px;
+
+  color: #ffffff;
+}
+.chart_button__item {
+  background: #ffffff;
+  border-radius: 11px;
+  color: #ffcc21;
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+
+  text-align: center;
+  letter-spacing: 0.075px;
+
+  color: #ffcc21;
+  padding: 2px 21px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.chart_button__item.active {
+  background: #ffcc21;
+  color: #ffffff;
+}
+.exercise__item {
+  position: relative;
+
+  border-bottom: 1px solid #777777;
+  margin-bottom: 8px;
+  padding: 4px;
+  color: #fff;
+}
+/* .exercise__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 105%;
+  height: 2px;
+  background: #ffcc21;
+} */
+.exercise__item__name {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height, or 147% */
+  letter-spacing: 0.075px;
+  color: #ffffff;
+}
+.exercise__item__time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  text-align: right;
+  letter-spacing: 0.09px;
+
+  color: #ffcc21;
+}
+.exercise__item__enegy {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height, or 120% */
+
+  letter-spacing: 0.075px;
+
+  color: #ffcc21;
+}
+
+.chart__content__height::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 3px;
+  background: #777777;
+}
+.chart__content__height::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #ffcc21;
+}
+
+.diary__item {
+  background: #ffffff;
+  border: 2px solid #707070;
+  max-width: 231px;
+  padding: 16px;
+}
+.diary__item__date {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  letter-spacing: 0.09px;
+
+  color: #414141;
+}
+.diary__item__time {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  /* or 122% */
+
+  letter-spacing: 0.09px;
+
+  color: #414141;
+  margin-bottom: 8px;
+}
+.diary__item__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  /* or 142% */
+  letter-spacing: 0.06px;
+  color: #414141;
+}
+.diary__item__content {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+  /* or 142% */
+  letter-spacing: 0.06px;
+  color: #414141;
+}
+.diary__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  /* or 123% */
+
+  letter-spacing: 0.11px;
+
+  color: #414141;
+  text-transform: uppercase;
+}
+
+.column__box__item {
+  background: #2e2e2e;
+  padding: 8px;
+  margin: 16px;
+}
+.column__box__item__title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 27px;
+  /* or 123% */
+  text-align: center;
+  letter-spacing: 0.11px;
+  color: #ffcc21;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+.column__box__item__des {
+  font-family: "Hiragino Kaku Gothic Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+  text-align: center;
+  color: #ffffff;
+}
+.column__card__item {
+  position: relative;
+  max-width: 234px;
+}
+.column__card__item__img {
+  width: 234px;
+  height: 100%;
+  object-fit: cover;
+}
+.column__card__item__time {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffcc21;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  color: #ffffff;
+  padding: 7px 8px;
+}
+.column__card__item__title {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 22px;
+  /* or 183% */
+
+  letter-spacing: 0.06px;
+
+  color: #ff963c;
+}
+.column__card__item__des {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  /* or 147% */
+
+  letter-spacing: 0.075px;
+
+  color: #414141;
+}
